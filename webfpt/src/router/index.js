@@ -10,7 +10,7 @@ const routes = [
   },
   {
     path: "/iphone16",
-    name: "Product",
+    name: "Category",
     component: () => import("../View/ProductPage.vue"),
     meta: { layout: DefaultPage },
   },
@@ -27,9 +27,9 @@ const routes = [
     meta: { layout: NormalPage },
   },
   {
-    path: "/category",
-    name: "Category",
-    component: () => import("../components/Category.vue"),
+    path: "/product",
+    name: "Product",
+    component: () => import("../View/Category.vue"),
     meta: { layout: NormalPage },
   },
 ];

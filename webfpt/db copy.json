@@ -1,0 +1,1395 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 15 Pro Max 256GB",
+      "instances": [
+        {
+          "img": "@/assets/d1.jpg",
+          "color": "bue",
+          "price": 29990000,
+          "notification": "0%",
+          "SalePrice": "-24%",
+          "OriginalPrice": 34990000,
+          "Discount": 8000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
+      "instances": [
+        {
+          "img": "@/assets/d1.jpg",
+          "color": "bue",
+          "price": 29990000,
+          "notification": "0%",
+          "SalePrice": "-24%",
+          "OriginalPrice": 34990000,
+          "Discount": 8000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Laptop Acer Aspire Go AG15-31P-32U6 i3 N305/8GB/512GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 8900000,
+
+          "notification": "0%",
+          "SalePrice": "-10%",
+          "OriginalPrice": 34990000,
+          "Discount": 990000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Smart Tivi Samsung Crystal UHD 4K 43 inch UA43AU7002",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 6490000,
+          "notification": "0%",
+          "SalePrice": "-60%",
+          "OriginalPrice": 34990000,
+          "Discount": 1300000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Quạt điều hòa Sunhouse SHD7744",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 2190000,
+
+          "notification": "0%",
+          "SalePrice": "-37%",
+          "OriginalPrice": 34990000,
+          "Discount": 1300000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Xiaomi Poco M6 Pro 8GB 256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 5390000,
+          "notification": "0%",
+          "SalePrice": "-8%",
+          "OriginalPrice": 34990000,
+          "Discount": 500000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Laptop Asus Vivobook 15 OLED A1505VA-L1113W i5 13500H/16GB/512GB/15.6'FHD/Win11",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 17890000,
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Honor X9B 5G 12GB-256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 2190000,
+
+          "notification": "0%",
+          "SalePrice": "-11%",
+          "OriginalPrice": 34990000,
+          "Discount": 2200000
+        },
+        {
+          "img": "@/assets/a1.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Samsung Galaxy A15 128GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 7990000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Laptop Lenovo Gaming LOQ - 15IAX9 i5 12450HX/AI/16GB/512GB/15.6",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 19900000,
+          "notification": "0%",
+          "SalePrice": "-11%",
+          "OriginalPrice": 34990000,
+          "Discount": 1000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Xiaomi POCO X6 5G 12GB-256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 4490000,
+
+          "notification": "0%",
+          "SalePrice": "-31%",
+          "OriginalPrice": 34990000,
+          "Discount": 1000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Samsung Galaxy A35 5G 128GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 7990000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 300000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Samsung Galaxy Tab A9 WiFi 8GB 128GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 7990000,
+
+          "notification": "0%",
+          "SalePrice": "-24%",
+          "OriginalPrice": 34990000,
+          "Discount": 1200000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Loa Bluetooth EDIFIER MP85",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 290,
+
+          "notification": "0%",
+          "SalePrice": "-31%",
+          "OriginalPrice": 34990000,
+          "Discount": 150
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 29390000,
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "iPhone 16 Pro Max 256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 29390000,
+          "notification": "0%",
+          "SalePrice": "-10%",
+          "OriginalPrice": 34990000,
+          "Discount": 3000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 29390000,
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 29390000,
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 29390000,
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 29390000,
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 29390000,
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 29390000,
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 29390000,
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 29390000,
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "26",
+      "name": "Ổ cắm điện tích hợp củ sạc nhanh và đèn ngủ iCORE ITS100C",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 499000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "27",
+      "name": "Đèn pin sạc đội đầu Sunhouse SHE-5012",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 79000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "28",
+      "name": "Đèn sưởi nhà tắm Benny 3 bóng BHT825W",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "29",
+      "name": "Vợt muỗi Hotwell MR12H3",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 129000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "30",
+      "name": "Bàn ủi hơi nước Sunhouse SHD2067",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 329000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "31",
+      "name": "Bình đun siêu tốc 1.8L Hotwell KE18H4",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 2190000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "32",
+      "name": "Bình thủy điện Kangaroo 5 lít KG5K1",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 1290000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "33",
+      "name": "Máy sấy tóc Sunhouse SHD2306",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 290000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "34",
+      "name": "Nồi lẩu điện Goldsun 3 lít GMC3000",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 29390000,
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 489000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    },
+    {
+      "id": "35",
+      "name": "Lò vi sóng có nướng Toshiba 23 lít ER-SGS23(S1)VN",
+      "instances": [
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "bue",
+          "price": 2790000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "black",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        },
+        {
+          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
+          "color": "white",
+          "price": 590000,
+
+          "notification": "0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
+        }
+      ],
+      "memoryButton": [
+        { "name": "256 GB", "value": 1 },
+        { "name": "512 GB", "value": 2 },
+        { "name": "1 TB", "value": 3 }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

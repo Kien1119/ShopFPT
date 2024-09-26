@@ -5,19 +5,20 @@
       <div>
         <div class="imgContent">
           <img
-            :src="slotProps.data.image"
-            :alt="slotProps.data.name"
+            src="https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2024_3_19_638464460387523551_macbook-air-m3-15-2024-xam-1.jpg"
+            alt="Không có ảnh
+            "
             class="imgCategorry"
           />
 
-          <div class="iconDisCart" v-if="slotProps.data.function">
+          <!-- <div class="iconDisCart" v-if="slotProps.data.function">
             <img :src="slotProps.data.function[0].images" alt="" />
             <span>{{ slotProps.data.function[0].title }}</span>
             <img :src="slotProps.data.function[0].images1" alt="" />
             <span>{{ slotProps.data.function[0].title1 }}</span>
             <img :src="slotProps.data.function[0].images2" alt="" />
             <span>{{ slotProps.data.function[0].title2 }}</span>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -27,19 +28,23 @@
           style="color: black; font-size: 24px; font-weight: 400px"
         >
           <div class="notification">
-            <span>{{ slotProps.data.notification }}</span>
+            <span>{{ slotProps.data?.instances?.[0]?.notification }}</span>
           </div>
           <div class="Original">
             <div class="OriginalPrice">
-              {{ formatVND(slotProps.data.OriginalPrice) }}
+              {{ formatVND(slotProps.data?.instances?.[0]?.OriginalPrice) }}
             </div>
 
-            <div class="SalePrice">{{ slotProps.data.SalePrice }}</div>
+            <div class="SalePrice">
+              {{ slotProps.data?.instances?.[0]?.SalePrice }}
+            </div>
           </div>
 
-          <div class="price">{{ formatVND(slotProps.data.price) }}</div>
+          <div class="price">
+            {{ formatVND(slotProps.data?.instances?.[0]?.price) }}
+          </div>
           <div class="Discount">
-            {{ slotProps.data.Discount }}
+            {{ formatVND(slotProps.data?.instances?.[0]?.Discount) }}
           </div>
         </div>
         <div class="textCard" style="color: black">
@@ -57,12 +62,10 @@
               item-content-class="hover-bg"
             >
               <template #option="slotProps">
-                <div
-                  class="hover-bg"
-                  :class="
-                    selectedValue == slotProps.option.value ? 'acitve' : ''
-                  "
-                >
+                zzz
+
+                {{ selectedValue ? "aaa" : "cc" }}
+                <div :class="selectedValue ? 'active hover-bg' : ''">
                   {{ slotProps.option.name }}
                 </div>
               </template>
@@ -101,7 +104,8 @@ import { ref } from "vue";
 defineProps({
   slotProps: Object,
 });
-const selectedValue = ref(1);
+const selectedValue = ref(true);
+
 function formatVND(amount) {
   if (typeof amount !== "number" || isNaN(amount)) {
     return "-";

@@ -17,7 +17,8 @@
 import { ref } from "vue";
 import CardProduct from "./CardProduct.vue";
 import { defineProps } from "vue";
-
+import { useProductStore } from "@/stores/index"; // Import store
+const productStore = useProductStore();
 defineProps({
   categorys: {
     type: Array,

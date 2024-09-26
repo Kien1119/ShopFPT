@@ -174,7 +174,8 @@
 <script setup>
 import CategoryProduct from "@/components/CategoryProduct.vue";
 import TabPanelsCategory from "@/components/TabPanelsCategory";
-import { ref } from "vue";
+import { useProductStore } from "@/stores/index"; // Import store
+import { computed, ref } from "vue";
 const responsiveOptions = ref([
   {
     breakpoint: "767px",
@@ -204,7 +205,14 @@ function formatVND(amount) {
 
   return amount.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
 }
-const categorys = ref([
+
+// State variables using ref and reactive
+const productStore = useProductStore();
+productStore.fetchProducts({ _per_page: 50 });
+const categorys = computed(() => productStore.products);
+console.log("🚀 ~ productStore.products:", productStore.products);
+
+const categorys1 = ref([
   {
     image: require("../assets/iphone_15_pro_max_f589ed5358.png"),
     alt: "img 1 description",

@@ -31,8 +31,8 @@ const cities = [
     to: "/",
   },
   {
-    name: "Category",
-    to: "/category",
+    name: "Product",
+    to: "/product",
   },
   {
     name: "Logout",

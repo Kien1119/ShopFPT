@@ -1,1005 +1,452 @@
 {
-  "posts": [
-    {
-      "id": "1",
-      "title": "iPhone 15 Pro Max 256GB",
-
-      "intances": [
-        {
-          "img": "../assets/iphone_15_pro_max_f589ed5358.png",
-          "color": "bue",
-          "price": 29390000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "img": "../webfpt/src/assets/b1.jpg",
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "img": "../webfpt/src/assets/c1.jpg",
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "2",
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB",
-      "intances": [
-        {
-          "img": "../webfpt/src/assets/d1.jpg",
-          "color": "bue",
-          "price": 29990000,
-          "sale": "-24%",
-          "original": 34990000,
-          "discount": 8000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "3",
-      "img": "./assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-      "title": "OPPO A3 6GB 128GB",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 4990000,
-          "sale": "-18%",
-          "original": 34990000,
-          "discount": 2000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "4",
-      "title": "Laptop Acer Aspire Go AG15-31P-32U6 i3 N305/8GB/512GB",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 8900000,
-          "sale": "-10%",
-          "original": 34990000,
-          "discount": 990000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "5",
-      "title": "Smart Tivi Samsung Crystal UHD 4K 43 inch UA43AU7002",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 6490000,
-          "sale": "-37%",
-          "original": 34990000,
-          "discount": 1300000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "6",
-      "title": "Quạt điều hòa Sunhouse SHD7744",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 2190000,
-          "sale": "-37%",
-          "original": 34990000,
-          "discount": 1300000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
+  "products": [
     {
       "id": "7",
-      "title": "Xiaomi Poco M6 Pro 8GB 256GB",
-      "intances": [
+      "name": "Xiaomi Poco M6 Pro 8GB 256GB",
+      "instances": [
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "bue",
           "price": 5390000,
-          "sale": "-8%",
-          "original": 34990000,
-          "discount": 500000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-8%",
+          "OriginalPrice": 34990000,
+          "Discount": 500000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "black",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "white",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         }
       ],
-      "storages": ["256GB", "512GB", "1TB"]
+      "memoryButton": [
+        {
+          "name": "256 GB",
+          "value": 1,
+          "default": true
+        },
+        {
+          "name": "512 GB",
+          "value": 2,
+          "default": false
+        },
+        {
+          "name": "1 TB",
+          "value": 3,
+          "default": false
+        }
+      ]
     },
     {
       "id": "8",
-      "title": "Laptop Asus Vivobook 15 OLED A1505VA-L1113W i5 13500H/16GB/512GB/15.6'FHD/Win11",
-      "intances": [
+      "name": "Laptop Asus Vivobook 15 OLED A1505VA-L1113W i5 13500H/16GB/512GB/15.6'FHD/Win11",
+      "instances": [
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "bue",
           "price": 17890000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "black",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "white",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         }
       ],
-      "storages": ["256GB", "512GB", "1TB"]
+      "memoryButton": [
+        {
+          "name": "256 GB",
+          "value": 1,
+          "default": true
+        },
+        {
+          "name": "512 GB",
+          "value": 2,
+          "default": false
+        },
+        {
+          "name": "1 TB",
+          "value": 3,
+          "default": false
+        }
+      ]
     },
     {
       "id": "9",
-      "title": "Honor X9B 5G 12GB-256GB",
-      "intances": [
+      "name": "Honor X9B 5G 12GB-256GB",
+      "instances": [
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "bue",
           "price": 2190000,
-          "sale": "-11%",
-          "original": 34990000,
-          "discount": 2200000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-11%",
+          "OriginalPrice": 34990000,
+          "Discount": 2200000
         },
         {
+          "image": "@/assets/a1.jpg",
           "color": "black",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "white",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         }
       ],
-      "storages": ["256GB", "512GB", "1TB"]
+      "memoryButton": [
+        {
+          "name": "256 GB",
+          "value": 1,
+          "default": true
+        },
+        {
+          "name": "512 GB",
+          "value": 2,
+          "default": false
+        },
+        {
+          "name": "1 TB",
+          "value": 3,
+          "default": false
+        }
+      ]
     },
     {
       "id": "10",
-      "title": "Samsung Galaxy A15 128GB",
-      "intances": [
+      "name": "Samsung Galaxy A15 128GB",
+      "instances": [
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "bue",
           "price": 7990000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "black",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "white",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         }
       ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "11",
-      "title": "Laptop Lenovo Gaming LOQ - 15IAX9 i5 12450HX/AI/16GB/512GB/15.6",
-      "intances": [
+      "memoryButton": [
         {
-          "color": "bue",
-          "price": 19900000,
-          "sale": "-11%",
-          "original": 34990000,
-          "discount": 1000000
+          "name": "256 GB",
+          "value": 1,
+          "default": true
         },
         {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "name": "512 GB",
+          "value": 2,
+          "default": false
         },
         {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "name": "1 TB",
+          "value": 3,
+          "default": false
         }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
+      ]
     },
     {
       "id": "12",
-      "title": "Xiaomi POCO X6 5G 12GB-256GB",
-      "intances": [
+      "name": "Xiaomi POCO X6 5G 12GB-256GB",
+      "instances": [
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "bue",
           "price": 4490000,
-          "sale": "-31%",
-          "original": 34990000,
-          "discount": 1000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-31%",
+          "OriginalPrice": 34990000,
+          "Discount": 1000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "black",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "white",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         }
       ],
-      "storages": ["256GB", "512GB", "1TB"]
+      "memoryButton": [
+        {
+          "name": "256 GB",
+          "value": 1,
+          "default": true
+        },
+        {
+          "name": "512 GB",
+          "value": 2,
+          "default": false
+        },
+        {
+          "name": "1 TB",
+          "value": 3,
+          "default": false
+        }
+      ]
     },
     {
       "id": "13",
-      "title": "Samsung Galaxy A35 5G 128GB",
-      "intances": [
+      "name": "Samsung Galaxy A35 5G 128GB",
+      "instances": [
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "bue",
           "price": 7990000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 300000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 300000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "black",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "white",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         }
       ],
-      "storages": ["256GB", "512GB", "1TB"]
+      "memoryButton": [
+        {
+          "name": "256 GB",
+          "value": 1,
+          "default": true
+        },
+        {
+          "name": "512 GB",
+          "value": 2,
+          "default": false
+        },
+        {
+          "name": "1 TB",
+          "value": 3,
+          "default": false
+        }
+      ]
     },
     {
       "id": "14",
-      "title": "Samsung Galaxy Tab A9 WiFi 8GB 128GB",
-      "intances": [
+      "name": "Samsung Galaxy Tab A9 WiFi 8GB 128GB",
+      "instances": [
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "bue",
           "price": 7990000,
-          "sale": "-24%",
-          "original": 34990000,
-          "discount": 1200000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-24%",
+          "OriginalPrice": 34990000,
+          "Discount": 1200000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "black",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "white",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         }
       ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "15",
-      "title": "Loa Bluetooth EDIFIER MP85",
-      "intances": [
+      "memoryButton": [
         {
-          "color": "bue",
-          "price": 290,
-          "sale": "-31%",
-          "original": 34990000,
-          "discount": 150
+          "name": "256 GB",
+          "value": 1,
+          "default": true
         },
         {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "name": "512 GB",
+          "value": 2,
+          "default": false
         },
         {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "name": "1 TB",
+          "value": 3,
+          "default": false
         }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
+      ]
     },
     {
       "id": "16",
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB",
-      "intances": [
+      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
+      "instances": [
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "bue",
           "price": 29390000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "black",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "white",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         }
       ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "17",
-      "title": "iPhone 16 Pro Max 256GB",
-      "intances": [
+      "memoryButton": [
         {
-          "color": "bue",
-          "price": 29390000,
-          "sale": "-10%",
-          "original": 34990000,
-          "discount": 3000000
+          "name": "256 GB",
+          "value": 1,
+          "default": true
         },
         {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "name": "512 GB",
+          "value": 2,
+          "default": false
         },
         {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "name": "1 TB",
+          "value": 3,
+          "default": false
         }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
+      ]
     },
     {
       "id": "18",
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB",
-      "intances": [
+      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
+      "instances": [
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "bue",
           "price": 29390000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "black",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         },
         {
+          "image": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
           "color": "white",
           "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "notification": "Trả góp 0%",
+          "SalePrice": "-16%",
+          "OriginalPrice": 34990000,
+          "Discount": 5000000
         }
       ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "19",
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB",
-      "intances": [
+      "memoryButton": [
         {
-          "color": "bue",
-          "price": 29390000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "name": "256 GB",
+          "value": 1,
+          "default": true
         },
         {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
+          "name": "512 GB",
+          "value": 2,
+          "default": false
         },
         {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "20",
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 29390000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "21",
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 29390000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "22",
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 29390000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "23",
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 29390000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "24",
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 29390000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "25",
-      "title": "Samsung Galaxy S24 Ultra 5G 256GB",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 29390000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "26",
-      "title": "Ổ cắm điện tích hợp củ sạc nhanh và đèn ngủ iCORE ITS100C",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 499000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "27",
-      "title": "Đèn pin sạc đội đầu Sunhouse SHE-5012",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 79000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "28",
-      "title": "Đèn sưởi nhà tắm Benny 3 bóng BHT825W",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "29",
-      "title": "Vợt muỗi Hotwell MR12H3",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 129000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "30",
-      "title": "Bàn ủi hơi nước Sunhouse SHD2067",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 329000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "31",
-      "title": "Bình đun siêu tốc 1.8L Hotwell KE18H4",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 2190000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "32",
-      "title": "Bình thủy điện Kangaroo 5 lít KG5K1",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 1290000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "33",
-      "title": "Máy sấy tóc Sunhouse SHD2306",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 290000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "34",
-      "title": "Nồi lẩu điện Goldsun 3 lít GMC3000",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 29390000,
-          "sale": "-16%",
-          "original": 489000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": "35",
-      "title": "Lò vi sóng có nướng Toshiba 23 lít ER-SGS23(S1)VN",
-      "intances": [
-        {
-          "color": "bue",
-          "price": 2790000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "black",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        },
-        {
-          "color": "white",
-          "price": 590000,
-          "sale": "-16%",
-          "original": 34990000,
-          "discount": 5000000
-        }
-      ],
-      "storages": ["256GB", "512GB", "1TB"]
-    },
-    {
-      "id": 3,
-      "name": "Iphone 18",
-      "sku": "1234",
-      "intance": [
-        {
-          "color": "red"
-        },
-        {
-          "color": "red"
-        },
-        {
-          "color": "red"
+          "name": "1 TB",
+          "value": 3,
+          "default": false
         }
       ]
     }
@@ -1018,32 +465,5 @@
   ],
   "profile": {
     "name": "typicode"
-  },
-  "products": [
-    {
-      "id": "1",
-      "name": "iphone 15",
-      "intances": []
-    },
-    {
-      "id": "2",
-      "name": "Iphone 18"
-    },
-    {
-      "id": "3",
-      "name": "Iphone 18",
-      "sku": "1234",
-      "intance": [
-        {
-          "color": "red"
-        },
-        {
-          "color": "red"
-        },
-        {
-          "color": "red"
-        }
-      ]
-    }
-  ]
+  }
 }
