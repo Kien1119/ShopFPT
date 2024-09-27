@@ -23,7 +23,10 @@ export const useProductStore = defineStore("productStore", {
           },
         });
 
-        this.products = response.data.data.map(e=>({...e,memorySelected : getRandomNumber(e.memoryButton.lenght || 3)})); // Lưu dữ liệu vào state
+        this.products = response.data.data.map((e) => ({
+          ...e,
+          memorySelected: e.memoryButton.find((i) => i.default),
+        })); // Lưu dữ liệu vào state
         this.total = response.data.items; // Lưu dữ liệu vào state
       } catch (error) {
         console.error("Lỗi khi lấy dữ liệu sản phẩm:", error);

@@ -1,147 +1,6 @@
 {
   "products": [
     {
-      "id": "2",
-      "name": "Samsung Galaxy S24 Ultra 5G 256GB",
-      "instances": [
-        {
-          "img": "@/assets/d1.jpg",
-          "color": "bue",
-          "price": 29990000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-24%",
-          "OriginalPrice": 34990000,
-          "Discount": 8000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "black",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "white",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        }
-      ],
-      "memoryButton": [
-        {
-          "name": "256 GB",
-          "value": 1
-        },
-        {
-          "name": "512 GB",
-          "value": 2
-        },
-        {
-          "name": "1 TB",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "name": "Laptop Acer Aspire Go AG15-31P-32U6 i3 N305/8GB/512GB",
-      "instances": [
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "bue",
-          "price": 8900000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-10%",
-          "OriginalPrice": 34990000,
-          "Discount": 990000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "black",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "white",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        }
-      ],
-      "memoryButton": [
-        {
-          "name": "256 GB",
-          "value": 1
-        },
-        {
-          "name": "512 GB",
-          "value": 2
-        },
-        {
-          "name": "1 TB",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "id": "5",
-      "name": "Smart Tivi Samsung Crystal UHD 4K 43 inch UA43AU7002",
-      "instances": [
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "bue",
-          "price": 6490000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-60%",
-          "OriginalPrice": 34990000,
-          "Discount": 1300000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "black",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "white",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        }
-      ],
-      "memoryButton": [
-        {
-          "name": "256 GB",
-          "value": 1
-        },
-        {
-          "name": "512 GB",
-          "value": 2
-        },
-        {
-          "name": "1 TB",
-          "value": 3
-        }
-      ]
-    },
-    {
       "id": "6",
       "name": "Quạt điều hòa Sunhouse SHD7744",
       "instances": [
@@ -175,18 +34,23 @@
       ],
       "memoryButton": [
         {
-          "name": "256 GB",
-          "value": 1
-        },
-        {
-          "name": "512 GB",
-          "value": 2
-        },
-        {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
+        },
+        {
+          "name": "256GB",
+          "default": false
+        },
+        {
+          "name": "512GB",
+          "default": true
         }
-      ]
+      ],
+      "memorySelected": {
+        "name": "256GB",
+        "default": false
+      }
     },
     {
       "id": "7",
@@ -223,15 +87,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -270,15 +137,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -317,15 +187,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -364,15 +237,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -411,15 +287,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": false
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": true
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -458,15 +337,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -505,15 +387,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -552,15 +437,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -599,15 +487,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -646,15 +537,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -693,15 +587,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -740,15 +637,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -787,15 +687,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -834,15 +737,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -881,15 +787,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -928,15 +837,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -975,15 +887,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -1022,15 +937,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -1069,15 +987,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -1116,15 +1037,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -1163,15 +1087,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -1210,15 +1137,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -1257,15 +1187,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -1304,15 +1237,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -1351,15 +1287,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -1398,15 +1337,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -1445,15 +1387,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -1492,15 +1437,18 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
         }
       ]
     },
@@ -1539,15 +1487,58 @@
       "memoryButton": [
         {
           "name": "256 GB",
-          "value": 1
+          "value": 1,
+          "default": true
         },
         {
           "name": "512 GB",
-          "value": 2
+          "value": 2,
+          "default": false
         },
         {
           "name": "1 TB",
-          "value": 3
+          "value": 3,
+          "default": false
+        }
+      ]
+    },
+    {
+      "id": "65ca",
+      "name": "Uyeen  ngộ",
+      "memoryButton": [
+        {
+          "name": "Uyeen  ngộ"
+        }
+      ],
+      "instances": [
+        {
+          "price": 1,
+          "image": "1",
+          "color": "1",
+          "OriginalPrice": 1,
+          "SalePrice": "1",
+          "Discount": 1,
+          "notification": "1"
+        }
+      ]
+    },
+    {
+      "id": "f17c",
+      "name": "1",
+      "memoryButton": [
+        {
+          "name": "1"
+        }
+      ],
+      "instances": [
+        {
+          "price": 1,
+          "image": "1",
+          "color": "1",
+          "OriginalPrice": 1,
+          "SalePrice": "1",
+          "Discount": 1,
+          "notification": "1"
         }
       ]
     }

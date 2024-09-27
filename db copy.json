@@ -35,9 +35,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -75,9 +75,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -116,9 +116,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -155,9 +155,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -196,9 +196,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -236,9 +236,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -276,9 +276,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -317,9 +317,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -358,9 +358,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -398,9 +398,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -439,9 +439,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -480,9 +480,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -521,9 +521,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -562,9 +562,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -602,9 +602,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -642,9 +642,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -682,9 +682,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -722,9 +722,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -762,9 +762,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -802,9 +802,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -842,9 +842,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -882,9 +882,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -922,9 +922,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -962,9 +962,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -1003,9 +1003,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -1044,9 +1044,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -1085,9 +1085,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -1126,9 +1126,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -1167,9 +1167,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -1208,9 +1208,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -1249,9 +1249,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -1290,9 +1290,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -1330,9 +1330,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     },
     {
@@ -1371,9 +1371,9 @@
         }
       ],
       "memoryButton": [
-        { "name": "256 GB", "value": 1 },
-        { "name": "512 GB", "value": 2 },
-        { "name": "1 TB", "value": 3 }
+        { "name": "256 GB", "value": 1, "default": true },
+        { "name": "512 GB", "value": 2, "default": false },
+        { "name": "1 TB", "value": 3, "default": false }
       ]
     }
   ],

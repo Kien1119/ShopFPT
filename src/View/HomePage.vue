@@ -204,12 +204,7 @@ function formatVND(amount) {
 
   return amount.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
 }
-const items = ref([
-    { route: '/dashboard', label: 'Dashboard', icon: 'pi pi-home' },
-    { route: '/transactions', label: 'Transactions', icon: 'pi pi-chart-line' },
-    { route: '/products', label: 'Products', icon: 'pi pi-list' },
-    { route: '/messages', label: 'Messages', icon: 'pi pi-inbox' }
-]);
+
 // State variables using ref and reactive
 const productStore = useProductStore();
 productStore.fetchProducts({ _per_page: 50 });

@@ -2,13 +2,12 @@
 <template>
   <div class="Cart" v-if="slotProps">
     <div class="disCart">
-          <img
-            src="https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2024_3_19_638464460387523551_macbook-air-m3-15-2024-xam-1.jpg"
-            alt="Không có ảnh
+      <img
+        src="https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2024_3_19_638464460387523551_macbook-air-m3-15-2024-xam-1.jpg"
+        alt="Không có ảnh
             "
-            class="imgCategorry"
-          />
-
+        class="imgCategorry"
+      />
 
       <div class="contentCart">
         <div
@@ -35,7 +34,7 @@
             {{ formatVND(slotProps?.instances?.[0]?.Discount) }}
           </div>
         </div>
-        <div class="textCard" style="color: black; min-height: 100px;">
+        <div class="textCard" style="color: black; min-height: 100px">
           {{ slotProps.name }}
         </div>
 
@@ -45,13 +44,18 @@
               class="aaa"
               v-model="slotProps.memorySelected"
               :options="slotProps.memoryButton"
-              optionLabel="name"
-              optionValue="id"
+              :modelValue="slotProps.memorySelected"
+              :optionValue="(val) => val"
               item-content-class="hover-bg"
             >
-              <template #option="slotProps">
-                <div :class="slotProps ? 'active hover-bg' : ''">
-                  {{ slotProps.option.name }}
+              <template #option="{ option }">
+                <!-- :class="
+                    option.value === slotProps.memoryButton[0].value
+                      ? 'active hover-bg'
+                      : ''
+                  " -->
+                <div>
+                  {{ option.name }}
                 </div>
               </template>
             </SelectButton>
@@ -85,10 +89,10 @@
 import { ref } from "vue";
 // const props =
 // eslint-disable-next-line no-undef
-defineProps({
+const props = defineProps({
   slotProps: Object,
 });
-const selectedValue = ref(1);
+
 function getRandomNumber() {
   return Math.floor(Math.random() * 3) + 1;
 }
@@ -234,7 +238,7 @@ function formatVND(amount) {
   display: none;
   position: absolute;
   left: 0;
-align-items: center;
+  align-items: center;
   color: rgba(0, 0, 0, 0.7);
 }
 

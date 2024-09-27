@@ -132,19 +132,6 @@
                     <span style="color: #d81221">{{ errors.Discount }}</span>
                     <div class="p-field">
                       <ValidateField class="input-vali" name="name"
-                        ><label for="memoryButton">Dung lượng</label>
-                        <InputText
-                          class="input-class"
-                          v-bind="memoryButtonAttrs"
-                          v-model="memoryButton"
-                          id="color"
-                      /></ValidateField>
-                    </div>
-                    <span style="color: #d81221">{{
-                      errors.memoryButton
-                    }}</span>
-                    <div class="p-field">
-                      <ValidateField class="input-vali" name="name"
                         ><label for="notification">Trả góp</label>
                         <InputText
                           class="input-class"
@@ -155,6 +142,27 @@
                     </div>
                     <span style="color: #d81221">{{
                       errors.notification
+                    }}</span>
+                    <div class="p-field">
+                      <ValidateField class="input-vali" name="name"
+                        ><label for="memoryButton">Dung lượng</label>
+                        <MultiSelect
+                          v-model="select"
+                          :options="handleSubmit(values)"
+                          optionLabel="name"
+                          filter
+                          placeholder="Select Dung Lượng"
+                          :maxSelectedLabels="3"
+                          class="w-full md:w-80" />
+                        <InputText
+                          class="input-class"
+                          v-bind="memoryButtonAttrs"
+                          v-model="memoryButton"
+                          id="color"
+                      /></ValidateField>
+                    </div>
+                    <span style="color: #d81221">{{
+                      errors.memoryButton
                     }}</span>
                   </div>
                 </div>
@@ -188,7 +196,7 @@
             header="Chỉnh sửa sản phẩm"
             modal
           >
-            <form style="display: flex;">
+            <form style="display: flex">
               <div class="formUpdate">
                 <div class="name-1">
                   <div class="p-field">
@@ -197,7 +205,7 @@
                   </div>
                   <div class="p-field">
                     <label for="image">Giá</label>
-                    <InputText
+                    <InputNumber
                       v-model="productBeingEdited.instances[0].price"
                       id="image"
                     />
@@ -228,14 +236,14 @@
                   </div>
                   <div class="p-field">
                     <label for="OriginalPrice">Giá Gốc</label>
-                    <InputText
+                    <InputNumber
                       v-model="productBeingEdited.instances[0].OriginalPrice"
                       id="OriginalPrice"
                     />
                   </div>
                   <div class="p-field">
                     <label for="Discount">Giảm giá</label>
-                    <InputText
+                    <InputNumber
                       v-model="productBeingEdited.instances[0].Discount"
                       id="Discount"
                     />
@@ -243,17 +251,36 @@
 
                   <div style="gap: 10px" class="p-field">
                     <label for="memoryButton">Dung lượng</label>
-                    <div v-for="item in productBeingEdited.memoryButton" :key="item.name">
-                    <InputText
-                      v-model="item.name"
-                      id="color"
+                    <div
+                      style="display: flex; align-items: center; gap: 5px"
+                      v-for="item in productBeingEdited.memoryButton"
+                      :key="item"
+                    >
+                      <InputGroup>
+                        <InputText v-model="item.name" id="color" />
+                        <SubmitButton
+                          icon="pi pi-times"
+                          @click="deleteMemo(item)"
+                          severity="danger"
+                        />
+                      </InputGroup>
+
+                      <Checkbox
+                        v-model="item.default"
+                        @change="onChange(item)"
+                        :binary="true"
+                      />
+                    </div>
+                    <SubmitButton
+                      label="Add"
+                      @click="
+                        () => productBeingEdited.memoryButton.push({ name: '' })
+                      "
                     />
-                  </div>
-                  <SubmitButton label="Add" @click="()=>productBeingEdited.memoryButton.push({name:''})" />
                   </div>
                 </div>
               </div>
-        <CardProduct :slotProps="productBeingEdited" />
+              <CardProduct :slotProps="productBeingEdited" />
             </form>
             <template #footer>
               <SubmitButton
@@ -390,6 +417,12 @@ function formatVND(amount) {
   return amount.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
 }
 
+function onChange(selectedItem) {
+  productBeingEdited.value.memoryButton.forEach((item) => {
+    item.default = false;
+  });
+  selectedItem.default = true;
+}
 // State variables using ref and reactive
 const productStore = useProductStore();
 const loading = ref(false);
@@ -559,6 +592,10 @@ const handleAddProduct = handleSubmit((values) => {
     },
   });
 });
+
+const deleteMemo = (item) => {
+  productBeingEdited.value.memoryButton.splice(item, 1);
+};
 
 const [name, nameAttrs] = defineField("name");
 const [price, priceAttrs] = defineField("price");

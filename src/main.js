@@ -35,6 +35,8 @@ import { Field, Form, ErrorMessage } from "vee-validate";
 import ConfirmationService from "primevue/confirmationservice";
 import ToastService from "primevue/toastservice";
 import InputNumber from "primevue/inputnumber";
+import MultiSelect from "primevue/multiselect";
+
 import Dialog from "primevue/dialog";
 const app = createApp(App);
 const pinia = createPinia();
@@ -84,5 +86,6 @@ app.component("TableColumn", Column);
 app.component("Image", Image);
 app.component("Toast", Toast);
 app.component("Dialog", Dialog);
+app.component("MultiSelect", MultiSelect);
 app.component("InputNumber", InputNumber);
 app.mount("#app");
