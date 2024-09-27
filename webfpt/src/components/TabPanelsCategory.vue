@@ -8,7 +8,7 @@
       :responsiveOptions="responsiveOptions"
     >
       <template #item="slotProps">
-        <CardProduct :slotProps="slotProps" />
+        <CardProduct :slotProps="slotProps.data" />
       </template>
     </Carousel>
   </div>

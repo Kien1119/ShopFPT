@@ -130,11 +130,10 @@
                 ><TabPanelsCategory :categorys="categorys"></TabPanelsCategory>
               </TabPanel>
               <TabPanel value="1" as="p" class="m-0">
-                <TabPanelsCategory :categorys="categorys2"></TabPanelsCategory>
-                modi.
+                <TabPanelsCategory :categorys="categorys"></TabPanelsCategory>
               </TabPanel>
               <TabPanel value="2">
-                <TabPanelsCategory :categorys="categorys3"></TabPanelsCategory>
+                <TabPanelsCategory :categorys="categorys"></TabPanelsCategory>
               </TabPanel>
             </TabPanels>
           </Tabs>
@@ -205,13 +204,16 @@ function formatVND(amount) {
 
   return amount.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
 }
-
+const items = ref([
+    { route: '/dashboard', label: 'Dashboard', icon: 'pi pi-home' },
+    { route: '/transactions', label: 'Transactions', icon: 'pi pi-chart-line' },
+    { route: '/products', label: 'Products', icon: 'pi pi-list' },
+    { route: '/messages', label: 'Messages', icon: 'pi pi-inbox' }
+]);
 // State variables using ref and reactive
 const productStore = useProductStore();
 productStore.fetchProducts({ _per_page: 50 });
 const categorys = computed(() => productStore.products);
-console.log("🚀 ~ productStore.products:", productStore.products);
-
 const categorys1 = ref([
   {
     image: require("../assets/iphone_15_pro_max_f589ed5358.png"),

@@ -1,5 +1,5 @@
-import { defineStore } from "pinia";
 import axios from "axios";
+import { defineStore } from "pinia";
 
 export const useProductStore = defineStore("productStore", {
   state: () => ({
@@ -15,7 +15,6 @@ export const useProductStore = defineStore("productStore", {
   }),
   actions: {
     async fetchProducts(params) {
-      console.log("🚀 ~ fetchProducts ~ params:", params);
       try {
         const response = await axios.get(`http://localhost:3000/products`, {
           params: {
@@ -24,7 +23,7 @@ export const useProductStore = defineStore("productStore", {
           },
         });
 
-        this.products = response.data.data; // Lưu dữ liệu vào state
+        this.products = response.data.data.map(e=>({...e,memorySelected : getRandomNumber(e.memoryButton.lenght || 3)})); // Lưu dữ liệu vào state
         this.total = response.data.items; // Lưu dữ liệu vào state
       } catch (error) {
         console.error("Lỗi khi lấy dữ liệu sản phẩm:", error);
@@ -75,3 +74,7 @@ export const useProductStore = defineStore("productStore", {
     },
   },
 });
+
+function getRandomNumber(x) {
+  return Math.floor(Math.random() * x) + 1;
+}

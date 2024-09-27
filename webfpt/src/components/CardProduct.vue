@@ -1,9 +1,7 @@
 <!-- eslint-disable vue/no-mutating-props -->
 <template>
-  <div class="Cart" style="height: 600px">
+  <div class="Cart" v-if="slotProps">
     <div class="disCart">
-      <div>
-        <div class="imgContent">
           <img
             src="https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2024_3_19_638464460387523551_macbook-air-m3-15-2024-xam-1.jpg"
             alt="Không có ảnh
@@ -11,16 +9,6 @@
             class="imgCategorry"
           />
 
-          <!-- <div class="iconDisCart" v-if="slotProps.data.function">
-            <img :src="slotProps.data.function[0].images" alt="" />
-            <span>{{ slotProps.data.function[0].title }}</span>
-            <img :src="slotProps.data.function[0].images1" alt="" />
-            <span>{{ slotProps.data.function[0].title1 }}</span>
-            <img :src="slotProps.data.function[0].images2" alt="" />
-            <span>{{ slotProps.data.function[0].title2 }}</span>
-          </div> -->
-        </div>
-      </div>
 
       <div class="contentCart">
         <div
@@ -28,44 +16,42 @@
           style="color: black; font-size: 24px; font-weight: 400px"
         >
           <div class="notification">
-            <span>{{ slotProps.data?.instances?.[0]?.notification }}</span>
+            <span>{{ slotProps?.instances?.[0]?.notification }}</span>
           </div>
           <div class="Original">
             <div class="OriginalPrice">
-              {{ formatVND(slotProps.data?.instances?.[0]?.OriginalPrice) }}
+              {{ formatVND(slotProps?.instances?.[0]?.OriginalPrice) }}
             </div>
 
             <div class="SalePrice">
-              {{ slotProps.data?.instances?.[0]?.SalePrice }}
+              {{ slotProps?.instances?.[0]?.SalePrice }}
             </div>
           </div>
 
           <div class="price">
-            {{ formatVND(slotProps.data?.instances?.[0]?.price) }}
+            {{ formatVND(slotProps?.instances?.[0]?.price) }}
           </div>
           <div class="Discount">
-            {{ formatVND(slotProps.data?.instances?.[0]?.Discount) }}
+            {{ formatVND(slotProps?.instances?.[0]?.Discount) }}
           </div>
         </div>
-        <div class="textCard" style="color: black">
-          {{ slotProps.data.name }}
+        <div class="textCard" style="color: black; min-height: 100px;">
+          {{ slotProps.name }}
         </div>
 
         <span class="buttonCategory">
-          <div class="buttonRam" v-if="slotProps.data.memoryButton">
+          <div class="buttonRam" v-if="slotProps.memoryButton">
             <SelectButton
               class="aaa"
-              v-model="selectedValue"
-              :model-value="getRandomNumber"
-              :options="slotProps.data.memoryButton"
+              v-model="slotProps.memorySelected"
+              :options="slotProps.memoryButton"
               optionLabel="name"
               optionValue="id"
               item-content-class="hover-bg"
             >
               <template #option="slotProps">
-                <div :class="slotProps.data ? 'active hover-bg' : ''">
+                <div :class="slotProps ? 'active hover-bg' : ''">
                   {{ slotProps.option.name }}
-                  {{ slotProps.data }}
                 </div>
               </template>
             </SelectButton>
@@ -73,7 +59,6 @@
         </span>
       </div>
     </div>
-    <div style="border: 1px solid #ccc; margin: 30px"></div>
 
     <div class="bankHover">
       <div class="bankItem bankOne">
@@ -125,10 +110,6 @@ function formatVND(amount) {
   align-items: center;
   justify-content: space-around;
 }
-.imgContent {
-  display: flex;
-  align-items: center;
-}
 .iconDisCart {
   display: flex;
   flex-direction: column;
@@ -136,9 +117,10 @@ function formatVND(amount) {
 }
 
 .imgCategorry {
-  height: 200px;
-  width: 80%;
-  object-fit: contain;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  object-fit: cover;
 }
 .iconDisCart img {
   object-fit: contain;
@@ -147,17 +129,10 @@ function formatVND(amount) {
 .iconDisCart span {
   font-size: 9px;
 }
-.notification {
-  margin-top: 20px;
-  height: 22px;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  right: 0;
-}
 .notification span {
   background: #e5e7eb;
   color: #6b7280;
+  padding: 6px 15px;
   font-size: 15px;
   border-radius: 100px;
 }
@@ -166,12 +141,9 @@ function formatVND(amount) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  text-align: center;
   line-height: 1.5;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  right: 0;
+  text-align: left;
+  gap: 5px;
 }
 .Original {
   margin-top: 10px;
@@ -214,12 +186,12 @@ function formatVND(amount) {
 
 .contentCart {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 .buttonCategory {
   display: flex;
-  width: 70%;
-  margin-left: 30px;
+  justify-content: center;
   color: #000 !important;
 }
 
@@ -238,8 +210,9 @@ function formatVND(amount) {
   flex-wrap: wrap;
   position: relative;
   gap: 7px;
-  align-items: center;
-  justify-content: space-around;
+  width: 100%;
+  min-height: 100px;
+  justify-content: center;
 }
 
 .bankItem {
@@ -261,15 +234,24 @@ function formatVND(amount) {
   display: none;
   position: absolute;
   left: 0;
-
+align-items: center;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .bankItem:hover > p {
   display: block;
 }
-.Cart:hover {
+.Cart {
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 20px;
+  gap: 15px;
+  margin: 7px;
+}
+.Cart:hover {
   border: 0.1px solid #ccc;
   cursor: pointer;
 }

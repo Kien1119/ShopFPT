@@ -188,7 +188,7 @@
             header="Chỉnh sửa sản phẩm"
             modal
           >
-            <form>
+            <form style="display: flex;">
               <div class="formUpdate">
                 <div class="name-1">
                   <div class="p-field">
@@ -243,21 +243,17 @@
 
                   <div style="gap: 10px" class="p-field">
                     <label for="memoryButton">Dung lượng</label>
+                    <div v-for="item in productBeingEdited.memoryButton" :key="item.name">
                     <InputText
-                      v-model="productBeingEdited.memoryButton[0].name"
-                      id="color"
-                    />
-                    <InputText
-                      v-model="productBeingEdited.memoryButton[1].name"
-                      id="color"
-                    />
-                    <InputText
-                      v-model="productBeingEdited.memoryButton[2].name"
+                      v-model="item.name"
                       id="color"
                     />
                   </div>
+                  <SubmitButton label="Add" @click="()=>productBeingEdited.memoryButton.push({name:''})" />
+                  </div>
                 </div>
               </div>
+        <CardProduct :slotProps="productBeingEdited" />
             </form>
             <template #footer>
               <SubmitButton
@@ -374,6 +370,7 @@
 </template>
 
 <script setup>
+import CardProduct from "../components/CardProduct.vue";
 import { ref, onMounted, computed, watch } from "vue";
 import CMSPage from "@/View/CMSPage.vue";
 import { useProductStore } from "@/stores/index"; // Import store
