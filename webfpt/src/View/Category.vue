@@ -605,6 +605,11 @@ ul li {
   display: flex;
   flex-direction: column;
 }
+.name-1 .p-field .input-vali {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .name-2 {
   display: flex;
   align-items: center;
@@ -616,5 +621,10 @@ ul li {
   display: flex;
 
   flex-direction: column;
+}
+.name-2 .p-field .input-vali {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 </style>

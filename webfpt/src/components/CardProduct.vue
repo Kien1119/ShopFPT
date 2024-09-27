@@ -62,11 +62,9 @@
               item-content-class="hover-bg"
             >
               <template #option="slotProps">
-                zzz
-
-                {{ selectedValue ? "aaa" : "cc" }}
-                <div :class="selectedValue ? 'active hover-bg' : ''">
+                <div :class="slotProps.data ? 'active hover-bg' : ''">
                   {{ slotProps.option.name }}
+                  {{ slotProps.data }}
                 </div>
               </template>
             </SelectButton>
@@ -104,7 +102,7 @@ import { ref } from "vue";
 defineProps({
   slotProps: Object,
 });
-const selectedValue = ref(true);
+const selectedValue = ref(1);
 
 function formatVND(amount) {
   if (typeof amount !== "number" || isNaN(amount)) {
