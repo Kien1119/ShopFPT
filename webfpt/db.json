@@ -1550,26 +1550,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "id": "1a8f",
-      "name": "Uyeen  ngộ",
-      "memoryButton": [
-        {
-          "name": "Uyeen  ngộ"
-        }
-      ],
-      "instances": [
-        {
-          "price": 22222222222222,
-          "image": "ssssssss",
-          "color": "Hường",
-          "OriginalPrice": 22222,
-          "SalePrice": "100%",
-          "Discount": 2222222222,
-          "notification": "2222222"
-        }
-      ]
     }
   ],
   "comments": [

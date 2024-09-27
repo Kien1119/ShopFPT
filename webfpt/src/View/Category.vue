@@ -419,9 +419,18 @@ watch([productStore.params.name], () => {
 });
 
 const resetFilters = () => {
-  searchQuery.value = "";
+  productStore.params.name = "";
+  memoryButtonValue.value = null;
+  productStore.params._page = 1;
+  productStore.params._per_page = 10;
+  productStore.params.price = null;
+  productStore.params.color = null;
+  productStore.params.SalePrice = null;
+
   productStore.fetchProducts({});
 };
+
+console.log("🚀 ~ resetFilters ~ resetFilters:", resetFilters);
 
 const memoryButtonClick = () => {
   // Handle memoryButton filter logic

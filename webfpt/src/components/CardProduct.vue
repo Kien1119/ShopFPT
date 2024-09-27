@@ -56,9 +56,10 @@
             <SelectButton
               class="aaa"
               v-model="selectedValue"
+              :model-value="getRandomNumber"
               :options="slotProps.data.memoryButton"
               optionLabel="name"
-              optionValue="value"
+              optionValue="id"
               item-content-class="hover-bg"
             >
               <template #option="slotProps">
@@ -103,6 +104,9 @@ defineProps({
   slotProps: Object,
 });
 const selectedValue = ref(1);
+function getRandomNumber() {
+  return Math.floor(Math.random() * 3) + 1;
+}
 
 function formatVND(amount) {
   if (typeof amount !== "number" || isNaN(amount)) {
