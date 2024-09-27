@@ -7,7 +7,7 @@
 <script setup>
 import { computed } from "vue";
 
-import DefaultPage from "../src/Layouts/DefaultPage";
+import DefaultPage from "./Layouts/DefaultPage";
 import NormalPage from "./Layouts/NormalPage.vue";
 
 import { useRoute } from "vue-router";
