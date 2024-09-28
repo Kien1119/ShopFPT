@@ -147,23 +147,32 @@
                       <ValidateField class="input-vali" name="name"
                         ><label for="memoryButton">Dung lượng</label>
                         <MultiSelect
-                          v-model="select"
-                          :options="handleSubmit(values)"
+                          v-model="memoryButton"
+                          :options="memoryOptions"
                           optionLabel="name"
                           filter
                           placeholder="Select Dung Lượng"
                           :maxSelectedLabels="3"
-                          class="w-full md:w-80" />
-                        <InputText
-                          class="input-class"
+                          class="w-full md:w-80"
                           v-bind="memoryButtonAttrs"
-                          v-model="memoryButton"
-                          id="color"
-                      /></ValidateField>
+                        />
+                      </ValidateField>
                     </div>
                     <span style="color: #d81221">{{
                       errors.memoryButton
                     }}</span>
+                    <!-- <SubmitButton
+                      label="Add Product"
+                      @click="
+                        () =>
+                          memoryOptions.push({
+                            name: '',
+                            value: '',
+                            default: '',
+                          })
+                      "
+                    /> -->
+                    {{}}
                   </div>
                 </div>
               </Form>
@@ -405,6 +414,7 @@ import { useForm } from "vee-validate";
 import * as yup from "yup";
 import { useConfirm } from "primevue/useconfirm";
 import { useToast } from "primevue/usetoast";
+
 const confirm = useConfirm();
 const toast = useToast();
 // const confirm = useConfirm();
@@ -516,6 +526,23 @@ const confirmDelete = (id) => {
   // productStore.deleteProduct();
   productStore.deleteProduct(id);
 };
+const memoryOptions = [
+  {
+    name: "256 GB",
+    value: 1,
+    default: false,
+  },
+  {
+    name: "512 GB",
+    value: 2,
+    default: true,
+  },
+  {
+    name: "1 TB",
+    value: 3,
+    default: false,
+  },
+];
 
 const { errors, handleSubmit, defineField } = useForm({
   validationSchema: yup.object({
@@ -525,7 +552,7 @@ const { errors, handleSubmit, defineField } = useForm({
     OriginalPrice: yup.number().required(),
     SalePrice: yup.string().required(),
     Discount: yup.number().required(),
-    memoryButton: yup.string().required(),
+    memoryButton: yup.array().required("Vui lòng chon dung lượng"),
     image: yup.string().required(),
     notification: yup.string().required(),
   }),
@@ -548,14 +575,13 @@ const handleAddProduct = handleSubmit((values) => {
         detail: "Record deleted",
         life: 3000,
       });
+
       const req = {
         name: values.name,
-        memoryButton: [
-          {
-            name: values.name,
-            value: values.value,
-          },
-        ],
+        memoryButton: memoryButton.value.map((memory) => ({
+          name: memory.name,
+          value: memory.value,
+        })),
         instances: [
           {
             price: values.price,
@@ -568,6 +594,7 @@ const handleAddProduct = handleSubmit((values) => {
           },
         ],
       };
+      console.log("🚀 ~ accept: ~ req:", req);
 
       if (req) {
         try {
