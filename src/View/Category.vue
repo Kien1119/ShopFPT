@@ -148,11 +148,11 @@
                         ><label for="memoryButton">Dung lượng</label>
                         <MultiSelect
                           v-model="memoryButton"
-                          :options="memoryOptions"
+                          :options="productStore.products[0].memoryButton"
                           optionLabel="name"
                           filter
-                          placeholder="Select Dung Lượng"
-                          :maxSelectedLabels="3"
+                          placeholder="Select Memory"
+                          :maxSelectedLabels="6"
                           class="w-full md:w-80"
                           v-bind="memoryButtonAttrs"
                         />
@@ -161,18 +161,22 @@
                     <span style="color: #d81221">{{
                       errors.memoryButton
                     }}</span>
-                    <!-- <SubmitButton
-                      label="Add Product"
+                    <InputText
+                      type="text"
+                      placeholder="Add memory you want"
+                      v-model="addMemoryButton"
+                    />
+
+                    <SubmitButton
+                      label="Add Memory"
                       @click="
                         () =>
-                          memoryOptions.push({
-                            name: '',
-                            value: '',
-                            default: '',
+                          productStore.products[0].memoryButton.push({
+                            name: addMemoryButton.replace(/\s+/g, ''),
+                            value: addMemoryButton,
                           })
                       "
-                    /> -->
-                    {{}}
+                    />
                   </div>
                 </div>
               </Form>
@@ -436,7 +440,7 @@ function onChange(selectedItem) {
 // State variables using ref and reactive
 const productStore = useProductStore();
 const loading = ref(false);
-const searchQuery = ref("");
+const addMemoryButton = ref("");
 const memoryButtonValue = ref(null);
 const AddDialogVisible = ref(false);
 
@@ -526,23 +530,19 @@ const confirmDelete = (id) => {
   // productStore.deleteProduct();
   productStore.deleteProduct(id);
 };
-const memoryOptions = [
-  {
-    name: "256 GB",
-    value: 1,
-    default: false,
-  },
-  {
-    name: "512 GB",
-    value: 2,
-    default: true,
-  },
-  {
-    name: "1 TB",
-    value: 3,
-    default: false,
-  },
-];
+// const memoryOptions = [
+//   {
+//     name: "256 GB",
+//     value: 1,
+//     default: false,
+//   },
+//   { name: "512 GB", value: 2, default: true },
+//   {
+//     name: "1 TB",
+//     value: 3,
+//     default: false,
+//   },
+// ];
 
 const { errors, handleSubmit, defineField } = useForm({
   validationSchema: yup.object({
@@ -552,7 +552,7 @@ const { errors, handleSubmit, defineField } = useForm({
     OriginalPrice: yup.number().required(),
     SalePrice: yup.string().required(),
     Discount: yup.number().required(),
-    memoryButton: yup.array().required("Vui lòng chon dung lượng"),
+    memoryButton: yup.array().required("memory is required"),
     image: yup.string().required(),
     notification: yup.string().required(),
   }),
