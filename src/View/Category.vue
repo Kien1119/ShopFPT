@@ -182,13 +182,6 @@
               </Form>
               <template #footer>
                 <SubmitButton
-                  label="Cancel"
-                  text
-                  severity="secondary"
-                  @click="visible = false"
-                  autofocus
-                />
-                <SubmitButton
                   label="Save"
                   outlined
                   severity="secondary"
@@ -203,6 +196,8 @@
             />
           </div>
         </div>
+        <ConfirmDialog />
+        <Toast></Toast>
         <div>
           <Dialog
             v-model:visible="editDialogVisible"
@@ -284,10 +279,15 @@
                         :binary="true"
                       />
                     </div>
+
                     <SubmitButton
                       label="Add"
                       @click="
-                        () => productBeingEdited.memoryButton.push({ name: '' })
+                        () =>
+                          productBeingEdited.memoryButton.push({
+                            name: '',
+                            index: productBeingEdited.memoryButton.length,
+                          })
                       "
                     />
                   </div>
@@ -297,13 +297,6 @@
             </form>
             <template #footer>
               <SubmitButton
-                label="Cancel"
-                text
-                severity="secondary"
-                @click="visible = false"
-                autofocus
-              />
-              <SubmitButton
                 label="Save"
                 outlined
                 severity="secondary"
@@ -312,6 +305,7 @@
               />
             </template>
           </Dialog>
+
           <DataTable
             :paginator="true"
             :loading="loading"
@@ -402,7 +396,6 @@
               </template>
             </TableColumn>
           </DataTable>
-          <ConfirmDialog />
         </div>
       </form>
     </CMSPage>
@@ -504,45 +497,42 @@ const editProduct = (product) => {
   editDialogVisible.value = true; // Hiển thị hộp thoại chỉnh sửa
 };
 
-// Hàm cập nhật sản phẩm
-const handleUpdateProduct = async () => {
-  console.log("handleUpdateProduct::", {
-    productBeingEdited: productBeingEdited.value,
-    productBeingEditedId: productBeingEditedId.value,
-  });
-  try {
-    // Gọi API cập nhật sản phẩm
-    // await productStore.handleUpdateProduct()(productBeingEdited.value);
-    await productStore.updateProduct(
-      productBeingEditedId.value,
-      productBeingEdited.value
-    );
-
-    editDialogVisible.value = false; // Đóng hộp thoại sau khi cập nhật
-    await productStore.fetchProducts(); // Lấy lại danh sách sản phẩm
-  } catch (error) {
-    console.error("Errorr:", error);
-  }
-};
-
 const confirmDelete = (id) => {
   // Trigger delete confirmation dialog
   // productStore.deleteProduct();
-  productStore.deleteProduct(id);
+  confirm.require({
+    message: "Do you want to delete this record?",
+    header: "Danger Zone",
+    icon: "pi pi-info-circle",
+    rejectLabel: "Cancel",
+    rejectProps: {
+      label: "Cancel",
+      severity: "secondary",
+      outlined: true,
+    },
+    acceptProps: {
+      label: "Delete",
+      severity: "danger",
+    },
+    accept: () => {
+      productStore.deleteProduct(id);
+      toast.add({
+        severity: "info",
+        summary: "Confirmed",
+        detail: "Record deleted",
+        life: 3000,
+      });
+    },
+    reject: () => {
+      toast.add({
+        severity: "error",
+        summary: "Rejected",
+        detail: "You have rejected",
+        life: 3000,
+      });
+    },
+  });
 };
-// const memoryOptions = [
-//   {
-//     name: "256 GB",
-//     value: 1,
-//     default: false,
-//   },
-//   { name: "512 GB", value: 2, default: true },
-//   {
-//     name: "1 TB",
-//     value: 3,
-//     default: false,
-//   },
-// ];
 
 const { errors, handleSubmit, defineField } = useForm({
   validationSchema: yup.object({
@@ -558,24 +548,70 @@ const { errors, handleSubmit, defineField } = useForm({
   }),
 });
 
-const handleAddProduct = handleSubmit((values) => {
-  console.log("🚀 ~ handleAddProduct ~ values:", values);
+// Hàm cập nhật sản phẩm
+const handleUpdateProduct = (values) => {
+  console.log("🚀 ~ handleUpdateProduct ~ handleUpdateProduct:", {
+    values,
+    confirm,
+  });
   confirm.require({
-    message: "Do you want to Add this record?",
-    header: "Add Employeee",
-    icon: "pi pi-info-circle",
-    rejectLabel: "Cancel",
-    acceptLabel: "Add",
-    rejectClass: "p-button-secondary p-button-outlined",
-    acceptClass: "p-button-danger",
+    header: "Are you sure?",
+    message: "Please confirm to proceed.",
+    accept: async () => {
+      console.log("acc");
+      toast.add({
+        severity: "info",
+        summary: "Confirmed",
+        detail: "You have accepted",
+        life: 3000,
+      });
+      try {
+        // Gọi API cập nhật sản phẩm
+        // await productStore.handleUpdateProduct()(productBeingEdited.value);
+        await productStore.updateProduct(
+          productBeingEditedId.value,
+          productBeingEdited.value
+        );
+
+        editDialogVisible.value = false; // Đóng hộp thoại sau khi cập nhật
+        await productStore.fetchProducts(); // Lấy lại danh sách sản phẩm
+      } catch (error) {
+        console.error("Errorr:", error);
+      }
+    },
+    reject: () => {
+      console.log("reject");
+      editDialogVisible.value = false;
+      toast.add({
+        severity: "error",
+        summary: "Rejected",
+        detail: "You have rejected",
+        life: 3000,
+      });
+    },
+  });
+};
+
+const handleAddProduct = handleSubmit((values) => {
+  confirm.require({
+    message: "Are you sure you want to proceed?",
+    header: "Confirmation",
+    icon: "pi pi-exclamation-triangle",
+    rejectProps: {
+      label: "Cancel",
+      severity: "secondary",
+      outlined: true,
+    },
+    acceptProps: {
+      label: "Save",
+    },
     accept: async () => {
       toast.add({
         severity: "info",
         summary: "Confirmed",
-        detail: "Record deleted",
+        detail: "Add Success",
         life: 3000,
       });
-
       const req = {
         name: values.name,
         memoryButton: memoryButton.value.map((memory) => ({
@@ -594,7 +630,6 @@ const handleAddProduct = handleSubmit((values) => {
           },
         ],
       };
-      console.log("🚀 ~ accept: ~ req:", req);
 
       if (req) {
         try {
@@ -616,12 +651,17 @@ const handleAddProduct = handleSubmit((values) => {
         detail: "You have rejected",
         life: 3000,
       });
+      AddDialogVisible.value = true;
     },
   });
 });
 
 const deleteMemo = (item) => {
-  productBeingEdited.value.memoryButton.splice(item, 1);
+  console.log("🚀 ~ deleteMemo ~ item:", item);
+  productBeingEdited.value.memoryButton.splice(
+    productBeingEdited.value.memoryButton.findIndex((arr) => arr === item),
+    1
+  );
 };
 
 const [name, nameAttrs] = defineField("name");

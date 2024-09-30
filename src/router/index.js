@@ -9,8 +9,8 @@ const routes = [
     meta: { layout: DefaultPage },
   },
   {
-    path: "/iphone16",
-    name: "Category",
+    path: "/product/:id",
+    name: "product-detail",
     component: () => import("../View/ProductPage.vue"),
     meta: { layout: DefaultPage },
   },

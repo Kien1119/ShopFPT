@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/no-mutating-props -->
 <template>
-  <div class="Cart" v-if="slotProps">
+  <div class="Cart" v-if="slotProps" @click="gotoProductDetail(slotProps.id)">
     <div class="disCart">
       <img
         src="https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2024_3_19_638464460387523551_macbook-air-m3-15-2024-xam-1.jpg"
@@ -93,10 +93,6 @@ const props = defineProps({
   slotProps: Object,
 });
 
-function getRandomNumber() {
-  return Math.floor(Math.random() * 3) + 1;
-}
-
 function formatVND(amount) {
   if (typeof amount !== "number" || isNaN(amount)) {
     return "-";
@@ -104,6 +100,18 @@ function formatVND(amount) {
 
   return amount.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
 }
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const gotoProductDetail = (id) => {
+  console.log("🚀 ~ gotoProductDetail ~ id:", id);
+  if (id) {
+    router.push({ name: "product-detail", params: { id } });
+  } else {
+    console.error("Không có dữ liệu hợp lệ được chọn.");
+  }
+};
 </script>
 
 <style lang="css" scoped>

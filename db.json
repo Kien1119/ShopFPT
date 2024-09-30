@@ -1,408 +1,6 @@
 {
   "products": [
     {
-      "id": "6",
-      "name": "Quạt điều hòa Sunhouse SHD7744",
-      "instances": [
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "bue",
-          "price": 2190000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-37%",
-          "OriginalPrice": 34990000,
-          "Discount": 1300000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "black",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "white",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        }
-      ],
-      "memoryButton": [
-        {
-          "name": "1 TB",
-          "value": 3,
-          "default": false
-        },
-        {
-          "name": "256GB",
-          "default": false
-        },
-        {
-          "name": "512GB",
-          "default": true
-        }
-      ],
-      "memorySelected": {
-        "name": "256GB",
-        "default": false
-      }
-    },
-    {
-      "id": "7",
-      "name": "Xiaomi Poco M6 Pro 8GB 256GB",
-      "instances": [
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "bue",
-          "price": 5390000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-8%",
-          "OriginalPrice": 34990000,
-          "Discount": 500000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "black",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "white",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        }
-      ],
-      "memoryButton": [
-        {
-          "name": "256 GB",
-          "value": 1,
-          "default": true
-        },
-        {
-          "name": "512 GB",
-          "value": 2,
-          "default": false
-        },
-        {
-          "name": "1 TB",
-          "value": 3,
-          "default": false
-        }
-      ]
-    },
-    {
-      "id": "8",
-      "name": "Laptop Asus Vivobook 15 OLED A1505VA-L1113W i5 13500H/16GB/512GB/15.6'FHD/Win11",
-      "instances": [
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "bue",
-          "price": 17890000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "black",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "white",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        }
-      ],
-      "memoryButton": [
-        {
-          "name": "256 GB",
-          "value": 1,
-          "default": true
-        },
-        {
-          "name": "512 GB",
-          "value": 2,
-          "default": false
-        },
-        {
-          "name": "1 TB",
-          "value": 3,
-          "default": false
-        }
-      ]
-    },
-    {
-      "id": "9",
-      "name": "Honor X9B 5G 12GB-256GB",
-      "instances": [
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "bue",
-          "price": 2190000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-11%",
-          "OriginalPrice": 34990000,
-          "Discount": 2200000
-        },
-        {
-          "img": "@/assets/a1.jpg",
-          "color": "black",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "white",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        }
-      ],
-      "memoryButton": [
-        {
-          "name": "256 GB",
-          "value": 1,
-          "default": true
-        },
-        {
-          "name": "512 GB",
-          "value": 2,
-          "default": false
-        },
-        {
-          "name": "1 TB",
-          "value": 3,
-          "default": false
-        }
-      ]
-    },
-    {
-      "id": "10",
-      "name": "Samsung Galaxy A15 128GB",
-      "instances": [
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "bue",
-          "price": 7990000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "black",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "white",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        }
-      ],
-      "memoryButton": [
-        {
-          "name": "256 GB",
-          "value": 1,
-          "default": true
-        },
-        {
-          "name": "512 GB",
-          "value": 2,
-          "default": false
-        },
-        {
-          "name": "1 TB",
-          "value": 3,
-          "default": false
-        }
-      ]
-    },
-    {
-      "id": "11",
-      "name": "Laptop Lenovo Gaming LOQ - 15IAX9 i5 12450HX/AI/16GB/512GB/15.6",
-      "instances": [
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "bue",
-          "price": 19900000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-11%",
-          "OriginalPrice": 34990000,
-          "Discount": 1000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "black",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "white",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        }
-      ],
-      "memoryButton": [
-        {
-          "name": "256 GB",
-          "value": 1,
-          "default": false
-        },
-        {
-          "name": "512 GB",
-          "value": 2,
-          "default": true
-        },
-        {
-          "name": "1 TB",
-          "value": 3,
-          "default": false
-        }
-      ]
-    },
-    {
-      "id": "12",
-      "name": "Xiaomi POCO X6 5G 12GB-256GB",
-      "instances": [
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "bue",
-          "price": 4490000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-31%",
-          "OriginalPrice": 34990000,
-          "Discount": 1000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "black",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "white",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        }
-      ],
-      "memoryButton": [
-        {
-          "name": "256 GB",
-          "value": 1,
-          "default": true
-        },
-        {
-          "name": "512 GB",
-          "value": 2,
-          "default": false
-        },
-        {
-          "name": "1 TB",
-          "value": 3,
-          "default": false
-        }
-      ]
-    },
-    {
-      "id": "13",
-      "name": "Samsung Galaxy A35 5G 128GB",
-      "instances": [
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "bue",
-          "price": 7990000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 300000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "black",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        },
-        {
-          "img": "@/assets/oppo_a3_tim_5_a81a5f4bf7.jpg",
-          "color": "white",
-          "price": 590000,
-          "notification": "Trả góp 0%",
-          "SalePrice": "-16%",
-          "OriginalPrice": 34990000,
-          "Discount": 5000000
-        }
-      ],
-      "memoryButton": [
-        {
-          "name": "256 GB",
-          "value": 1,
-          "default": true
-        },
-        {
-          "name": "512 GB",
-          "value": 2,
-          "default": false
-        },
-        {
-          "name": "1 TB",
-          "value": 3,
-          "default": false
-        }
-      ]
-    },
-    {
       "id": "14",
       "name": "Samsung Galaxy Tab A9 WiFi 8GB 128GB",
       "instances": [
@@ -450,7 +48,12 @@
           "value": 3,
           "default": false
         }
-      ]
+      ],
+      "memorySelected": {
+        "name": "256 GB",
+        "value": 1,
+        "default": true
+      }
     },
     {
       "id": "15",
@@ -1499,6 +1102,119 @@
           "name": "1 TB",
           "value": 3,
           "default": false
+        }
+      ]
+    },
+    {
+      "id": "bb79",
+      "name": "1",
+      "memoryButton": [
+        {
+          "name": "123",
+          "value": "123"
+        },
+        {
+          "name": "1 TB",
+          "value": 3
+        },
+        {
+          "name": "123GB",
+          "value": "123GB"
+        }
+      ],
+      "instances": [
+        {
+          "price": 1,
+          "image": "1",
+          "color": "1",
+          "OriginalPrice": 1,
+          "SalePrice": "1",
+          "Discount": 1,
+          "notification": "1"
+        }
+      ]
+    },
+    {
+      "id": "510c",
+      "name": "1",
+      "memoryButton": [
+        {
+          "name": "512 GB",
+          "value": 2
+        }
+      ],
+      "instances": [
+        {
+          "price": 1,
+          "image": "1",
+          "color": "1",
+          "OriginalPrice": 1,
+          "SalePrice": "1",
+          "Discount": 1,
+          "notification": "1"
+        }
+      ]
+    },
+    {
+      "id": "af11",
+      "name": "1",
+      "memoryButton": [
+        {
+          "name": "512 GB",
+          "value": 2
+        }
+      ],
+      "instances": [
+        {
+          "price": 1,
+          "image": "1",
+          "color": "1",
+          "OriginalPrice": 1,
+          "SalePrice": "1",
+          "Discount": 1,
+          "notification": "1"
+        }
+      ]
+    },
+    {
+      "id": "6d3c",
+      "name": "1",
+      "memoryButton": [
+        {
+          "name": "1 TB",
+          "value": 3
+        }
+      ],
+      "instances": [
+        {
+          "price": 1,
+          "image": "11",
+          "color": "1",
+          "OriginalPrice": 1,
+          "SalePrice": "1",
+          "Discount": 1,
+          "notification": "1"
+        }
+      ]
+    },
+    {
+      "id": "2aea",
+      "name": "1",
+      "memoryButton": [
+        {
+          "name": "512 GB",
+          "value": 2
+        }
+      ],
+      "instances": [
+        {
+          "price": 1,
+          "image": "1",
+          "color": "1",
+          "OriginalPrice": 1,
+          "SalePrice": "1",
+          "Discount": 1,
+          "notification": "1"
         }
       ]
     }
