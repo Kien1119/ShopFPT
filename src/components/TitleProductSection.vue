@@ -2,8 +2,8 @@
   <div class="TitleProductSection">
     <div class="titleSection">
       <!-- Sử dụng phần tử đầu tiên của mảng title -->
-      <h1>{{ title[0].title1 }}</h1>
-      <p>{{ title[0].code }}</p>
+      <h1>{{ title.name }} {{ resolveNameMemory }}</h1>
+      <p>{{ title.code }}</p>
     </div>
     <div class="contentSection">
       <div class="capacity">
@@ -12,7 +12,7 @@
         <SelectButton
           class="aaa"
           v-model="selectedValue"
-          :options="title[0].titleButton"
+          :options="title.memoryButton"
           optionLabel="name"
           optionValue="value"
           item-content-class="hover-bg"
@@ -27,14 +27,14 @@
           </template>
         </SelectButton>
       </div>
-
+      {{ priceProductComputed }}
       <div class="colorProduct">
         <p>Màu sắc</p>
         <div class="buttonSelect">
           <SelectButton
             class="options"
             v-model="selectProduct"
-            :options="title[0].productButton"
+            :options="title.imgProduct"
             optionValue="value"
             item-content-class="product-item"
           >
@@ -68,12 +68,12 @@
         </div>
       </div>
       <div class="orPrice"><span>Hoặc</span></div>
-      <div class="installmentSection">
-        <div class="titleInstallment">
+      <div class="notificationSection">
+        <div class="titleNotification">
           <span>Trả góp</span>
         </div>
-        <div class="installment">
-          <span>{{ quantity[0].installment }}</span>
+        <div class="notification">
+          <span>{{ quantity[0].notification }}</span>
         </div>
       </div>
     </div>
@@ -89,22 +89,33 @@
   </div>
 </template>
 <script setup>
+import { computed } from "vue";
 import { ref } from "vue";
+import { useProductStore } from "@/stores/index";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+const productStore = useProductStore;
 // eslint-disable-next-line no-undef
-defineProps({
-  title: Array,
-  slotProps: Object,
-  quantity: Object,
+const props = defineProps({
+  title: Object,
+  // slotProps: Object,
+  quantity: Array,
 });
 const selectedValue = ref(1);
 const selectProduct = ref(4);
 const buyProduct = () => {
-  console.log("ssss");
+  router.push({ name: "Management" });
 };
+
+const resolveNameMemory = computed(() => {
+  return props.title.memoryButton.find((i) => i.value === selectedValue.value)
+    .name;
+});
 </script>
 <style scoped>
 .titleSection h1 {
-  color: black;
+  color: #090d14;
   font-weight: 600;
   font-size: 30px;
   margin-bottom: 0;
@@ -250,17 +261,17 @@ const buyProduct = () => {
   display: flex;
   align-items: center;
 }
-.installmentSection {
+.notificationSection {
   display: flex;
   flex-direction: column;
 }
-.titleInstallment {
+.titleNotification {
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
   color: rgb(107 114 128 / 1);
 }
-.installment {
+.notification {
   margin-top: 20px;
   font-weight: 600;
   font-size: 18px;

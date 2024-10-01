@@ -22,7 +22,7 @@
         <p>/</p>
         <router-link to="/iphone16"><span>Điện thoại</span></router-link>
         <p>/</p>
-        <p>Iphone16 Pro Max 256GB</p>
+        <p>Iphone16 Pro Max</p>
       </div>
       <div class="section">
         <div class="imgSectionProduct">
@@ -42,8 +42,40 @@
 <script setup>
 import TitleProductSection from "@/components/TitleProductSection.vue";
 import SectionProduct from "../components/SectionProduct.vue";
-import { ref } from "vue";
+import { watch, ref, onMounted } from "vue";
+import { useRoute } from "vue-router";
+import { useProductStore } from "@/stores/index";
+const productStore = useProductStore;
 const selectedCategory = ref("Máy mới");
+const route = useRoute;
+const title = ref("");
+const quantity = ref("");
+const fetchProductDetails = async (id) => {
+  try {
+    const product = await productStore.fetchProductById(id); // Giả sử hàm này tồn tại trong store của bạn
+    title.value = product.title;
+    quantity.value = product.quantity;
+  } catch (error) {
+    console.error("Lỗi khi gọi API:", error);
+  }
+};
+
+// Theo dõi sự thay đổi của product ID từ URL
+watch(
+  () => route.params.id, // Giả sử product ID được lấy từ URL
+  (newId) => {
+    if (newId) {
+      fetchProductDetails(newId);
+    }
+  },
+  { immediate: true }
+);
+onMounted(() => {
+  const productId = route.params.id;
+  if (productId) {
+    fetchProductDetails(productId);
+  }
+});
 function formatVND(amount) {
   if (typeof amount !== "number" || isNaN(amount)) {
     return "-";
@@ -51,34 +83,37 @@ function formatVND(amount) {
 
   return amount.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
 }
-const title = ref([
-  {
-    title1: "iPhone 16 Pro Max 256GB",
-    code: "No.00904369",
-    titleButton: [
-      { name: "256 GB", value: 1 },
-      { name: "512 GB", value: 2 },
-      { name: "1 TB", value: 3 },
-    ],
-    productButton: [
-      { image: require("../assets/b1.jpg"), name: "Titan Trắng", value: 4 },
-      { image: require("../assets/a1.jpg"), name: "Titan Xanh", value: 5 },
-      { image: require("../assets/c1.jpg"), name: "Titan Tự nhiên", value: 6 },
-      { image: require("../assets/d1.jpg"), name: "Titan Đen", value: 7 },
-    ],
-  },
-]);
-const quantity = ref([
-  {
-    title: "Mua nay với giá",
-    price: formatVND(29490000),
-    OriginalPrice: formatVND(34990000),
-    sale: "16%",
-    bonus: `${"+7.372"} Điểm thưởng`,
-    Discount: formatVND(300000),
-    installment: `${formatVND(1663000)}/tháng`,
-  },
-]);
+
+// const title = ref({
+//   title1: "iPhone 16 Pro Max",
+//   code: "No.00904369",
+//   memoryButton: [
+//     { name: "256 GB", value: 1 },
+//     { name: "512 GB", value: 2 },
+//     { name: "1 TB", value: 3 },
+//   ],
+//   imgProduct: [
+//     { image: require("../assets/b1.jpg"),
+//      name: "Titan Trắng", value: 4 },
+//     { image: require("../assets/a1.jpg"),
+//     name: "Titan Xanh", value: 5 },
+//     { image: require("../assets/c1.jpg"),
+//     name: "Titan Tự nhiên", value: 6 },
+//     { image: require("../assets/d1.jpg"),
+//     name: "Titan Đen", value: 7 },
+//   ],
+// });
+// const quantity = ref([
+//   {
+//     title: "Mua nay với giá",
+//     price: formatVND(29490000),
+//     OriginalPrice: formatVND(34990000),
+//     sale: "16%",
+//     bonus: `${"+7.372"} Điểm thưởng`,
+//     Discount: formatVND(300000),
+//     installment: `${formatVND(1663000)}/tháng`,
+//   },
+// ]);
 const section = ref([
   require("../assets/b2.jpg"),
   require("../assets/b1.jpg"),

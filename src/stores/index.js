@@ -12,7 +12,29 @@ export const useProductStore = defineStore("productStore", {
     products: [], // Nơi lưu trữ danh sách sản phẩm
     total: 0, // Tổng số sản phẩm
     first: 0,
+    memoryOptions: [
+      {
+        id: 1,
+        memory: "256GB",
+        countPrice: 5000000,
+      },
+      {
+        id: 2,
+        memory: "521GB",
+        countPrice: 10000000,
+      },
+      {
+        id: 3,
+        memory: "1TB",
+        countPrice: 15000000,
+      },
+    ],
   }),
+  getter: {
+    // priceProductOption: (state) => {
+    //   return memoryOptions[0].countPrice;
+    // },
+  },
   actions: {
     async fetchProducts(params) {
       try {
@@ -28,6 +50,15 @@ export const useProductStore = defineStore("productStore", {
           memorySelected: e.memoryButton.find((i) => i.default),
         })); // Lưu dữ liệu vào state
         this.total = response.data.items; // Lưu dữ liệu vào state
+      } catch (error) {
+        console.error("Lỗi khi lấy dữ liệu sản phẩm:", error);
+      }
+    },
+    async fetchIdProducts(id) {
+      try {
+        const detail = await axios.get(`http://localhost:3000/products/:${id}`);
+        await this.fetchProducts({});
+        console.log("🚀 ~ fetchIdProducts ~ detail:", detail);
       } catch (error) {
         console.error("Lỗi khi lấy dữ liệu sản phẩm:", error);
       }
@@ -77,7 +108,6 @@ export const useProductStore = defineStore("productStore", {
     },
   },
 });
-
 function getRandomNumber(x) {
   return Math.floor(Math.random() * x) + 1;
 }

@@ -148,8 +148,9 @@
                         ><label for="memoryButton">Dung lượng</label>
                         <MultiSelect
                           v-model="memoryButton"
-                          :options="productStore.products[0].memoryButton"
-                          optionLabel="name"
+                          :options="productStore.memoryOptions"
+                          option-label="memory"
+                          option-value="memory"
                           filter
                           placeholder="Select Memory"
                           :maxSelectedLabels="6"
