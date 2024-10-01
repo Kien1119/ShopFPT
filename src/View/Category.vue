@@ -3,7 +3,6 @@
     <CMSPage>
       <h1>Product</h1>
 
-      <form>
         <div class="formCms">
           <InputGroup>
             <SubmitButton
@@ -23,6 +22,8 @@
               @click="resetFilters"
             />
           </InputGroup>
+
+          <!-- form add product -->
           <div class="addProduct">
             <div class="card flex justify-content-center">
               <SelectButton
@@ -180,6 +181,8 @@
                     />
                   </div>
                 </div>
+              <CardProduct :slotProps="productBeingEdited" />
+
               </Form>
               <template #footer>
                 <SubmitButton
@@ -196,10 +199,7 @@
               @click="AddDialogVisible = true"
             />
           </div>
-        </div>
-        <ConfirmDialog />
-        <Toast></Toast>
-        <div>
+          <!-- form update product -->
           <Dialog
             v-model:visible="editDialogVisible"
             header="Chỉnh sửa sản phẩm"
@@ -307,6 +307,8 @@
             </template>
           </Dialog>
 
+        </div>
+        <div>
           <DataTable
             :paginator="true"
             :loading="loading"
@@ -386,7 +388,7 @@
 
                   <SubmitButton
                     @click="editProduct(data)"
-                    label="Profile"
+                    label="Update"
                     type="button"
                     icon="pi pi-user"
                     rounded
@@ -398,7 +400,6 @@
             </TableColumn>
           </DataTable>
         </div>
-      </form>
     </CMSPage>
   </div>
 </template>

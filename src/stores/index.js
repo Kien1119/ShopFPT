@@ -10,6 +10,7 @@ export const useProductStore = defineStore("productStore", {
       _title: "",
     },
     products: [], // Nơi lưu trữ danh sách sản phẩm
+    product: {}, // Nơi lưu trữ danh sách sản phẩm
     total: 0, // Tổng số sản phẩm
     first: 0,
     memoryOptions: [
@@ -48,17 +49,22 @@ export const useProductStore = defineStore("productStore", {
         this.products = response.data.data.map((e) => ({
           ...e,
           memorySelected: e.memoryButton.find((i) => i.default),
+          instanceSelected: e.instances[0],
         })); // Lưu dữ liệu vào state
         this.total = response.data.items; // Lưu dữ liệu vào state
       } catch (error) {
         console.error("Lỗi khi lấy dữ liệu sản phẩm:", error);
       }
     },
-    async fetchIdProducts(id) {
+    async fetchProductById(id) {
       try {
-        const detail = await axios.get(`http://localhost:3000/products/:${id}`);
-        await this.fetchProducts({});
-        console.log("🚀 ~ fetchIdProducts ~ detail:", detail);
+        const {data} = await axios.get(`http://localhost:3000/products/${id}`);
+        this.product = {
+          ...data,
+          memorySelected: data.memoryButton.find((i) => i.default),
+          instanceSelected: data.instances[0],
+        }
+        return data
       } catch (error) {
         console.error("Lỗi khi lấy dữ liệu sản phẩm:", error);
       }

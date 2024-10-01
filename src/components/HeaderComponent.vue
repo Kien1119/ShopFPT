@@ -40,9 +40,6 @@
       <div class="listProducts">
         <ul class="ulList">
           <li><router-link to="#">laptop</router-link></li>
-          <li>
-            <router-link to="/iphone16">iphone16</router-link>
-          </li>
           <li><router-link to="#">iphone</router-link></li>
           <li><router-link to="#">hyperword</router-link></li>
           <li><router-link to="#">samsung</router-link></li>

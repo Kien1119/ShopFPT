@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <div class="quantityProduct">
+    <!-- <div class="quantityProduct">
       <div class="priceProduct">
         <span class="titleQuantity"> {{ quantity[0].title }}</span>
         <span class="priceQuantity"> {{ quantity[0].price }}</span>
@@ -76,7 +76,7 @@
           <span>{{ quantity[0].notification }}</span>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="buyProduct">
       <div class="iconCart">
         <SubmitButton class="icon" icon="pi pi-cart-arrow-down" />
@@ -109,8 +109,9 @@ const buyProduct = () => {
 };
 
 const resolveNameMemory = computed(() => {
-  return props.title.memoryButton.find((i) => i.value === selectedValue.value)
-    .name;
+  return ""
+  // return props.title.memoryButton.find((i) => i.value === selectedValue.value)
+  //   .name;
 });
 </script>
 <style scoped>

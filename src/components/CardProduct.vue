@@ -3,9 +3,8 @@
   <div class="Cart" v-if="slotProps" @click="gotoProductDetail(slotProps.id)">
     <div class="disCart">
       <img
-        src="https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2024_3_19_638464460387523551_macbook-air-m3-15-2024-xam-1.jpg"
-        alt="Không có ảnh
-            "
+        :src="slotProps.instanceSelected.img"
+        alt="Không có ảnh"
         class="imgCategorry"
       />
 
@@ -15,49 +14,40 @@
           style="color: black; font-size: 24px; font-weight: 400px"
         >
           <div class="notification">
-            <span>{{ slotProps?.instances?.[0]?.notification }}</span>
+            <span>{{ slotProps?.instanceSelected?.notification }}</span>
           </div>
           <div class="Original">
             <div class="OriginalPrice">
-              {{ formatVND(slotProps?.instances?.[0]?.OriginalPrice) }}
+              {{ formatVND(slotProps?.instanceSelected?.OriginalPrice) }}
             </div>
 
             <div class="SalePrice">
-              {{ slotProps?.instances?.[0]?.SalePrice }}
+              {{ slotProps?.instanceSelected?.SalePrice }}
             </div>
           </div>
 
           <div class="price">
-            {{ formatVND(slotProps?.instances?.[0]?.price) }}
+            {{ formatVND(slotProps?.instanceSelected?.price) }}
           </div>
           <div class="Discount">
-            {{ formatVND(slotProps?.instances?.[0]?.Discount) }}
+            {{ formatVND(slotProps?.instanceSelected?.Discount) }}
           </div>
         </div>
         <div class="textCard" style="color: black; min-height: 100px">
           {{ slotProps.name }}
-        </div>
+    </div>
 
         <span class="buttonCategory">
           <div class="buttonRam" v-if="slotProps.memoryButton">
             <SelectButton
-              class="aaa"
+              class="memorySelect"
               v-model="slotProps.memorySelected"
               :options="slotProps.memoryButton"
               :modelValue="slotProps.memorySelected"
               :optionValue="(val) => val"
+              option-label="name"
               item-content-class="hover-bg"
             >
-              <template #option="{ option }">
-                <!-- :class="
-                    option.value === slotProps.memoryButton[0].value
-                      ? 'active hover-bg'
-                      : ''
-                  " -->
-                <div>
-                  {{ option.name }}
-                </div>
-              </template>
             </SelectButton>
           </div>
         </span>
@@ -105,7 +95,6 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const gotoProductDetail = (id) => {
-  console.log("🚀 ~ gotoProductDetail ~ id:", id);
   if (id) {
     router.push({ name: "product-detail", params: { id } });
   } else {
@@ -207,7 +196,7 @@ const gotoProductDetail = (id) => {
   color: #000 !important;
 }
 
-.aaa {
+.memorySelect {
   gap: 10px;
   width: 200px;
 }

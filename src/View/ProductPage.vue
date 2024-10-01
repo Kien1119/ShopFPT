@@ -45,16 +45,16 @@ import SectionProduct from "../components/SectionProduct.vue";
 import { watch, ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import { useProductStore } from "@/stores/index";
-const productStore = useProductStore;
+const productStore = useProductStore();
 const selectedCategory = ref("Máy mới");
-const route = useRoute;
+const route = useRoute();
 const title = ref("");
 const quantity = ref("");
 const fetchProductDetails = async (id) => {
   try {
     const product = await productStore.fetchProductById(id); // Giả sử hàm này tồn tại trong store của bạn
     title.value = product.title;
-    quantity.value = product.quantity;
+    // quantity.value = product.quantity;
   } catch (error) {
     console.error("Lỗi khi gọi API:", error);
   }
