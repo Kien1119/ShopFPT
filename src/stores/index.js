@@ -13,6 +13,7 @@ export const useProductStore = defineStore("productStore", {
     product: {}, // Nơi lưu trữ danh sách sản phẩm
     total: 0, // Tổng số sản phẩm
     first: 0,
+    admin: {},
     memoryOptions: [
       {
         id: 1,
@@ -31,9 +32,17 @@ export const useProductStore = defineStore("productStore", {
       },
     ],
   }),
-  getter: {
+  getters: {
     // priceProductOption: (state) => {
-    //   return memoryOptions[0].countPrice;
+    //   console.log(
+    //     "🚀 ~ state:",
+    //     state.products.instances[0].price +
+    //       state.product.memoryButton[0].countPrice
+    //   );
+    //   return (
+    //     state.products.instances[0].price +
+    //     state.product.memoryButton[0].countPrice
+    //   );
     // },
   },
   actions: {
@@ -46,11 +55,15 @@ export const useProductStore = defineStore("productStore", {
           },
         });
 
-        this.products = response.data.data.map((e) => ({
-          ...e,
-          memorySelected: e.memoryButton.find((i) => i.default),
-          instanceSelected: e.instances[0],
-        })); // Lưu dữ liệu vào state
+        this.products = response.data.data.map((e, i) => {
+          console.log(e.instances?.[0] ? i : "");
+          return {
+            ...e,
+            memorySelected: e.memoryButton.find((i) => i.default),
+            instanceSelected: e.instances?.[0] ?? null,
+          };
+        }); // Lưu dữ liệu vào state
+
         this.total = response.data.items; // Lưu dữ liệu vào state
       } catch (error) {
         console.error("Lỗi khi lấy dữ liệu sản phẩm:", error);
@@ -58,13 +71,16 @@ export const useProductStore = defineStore("productStore", {
     },
     async fetchProductById(id) {
       try {
-        const {data} = await axios.get(`http://localhost:3000/products/${id}`);
+        const { data } = await axios.get(
+          `http://localhost:3000/products/${id}`
+        );
+
         this.product = {
           ...data,
           memorySelected: data.memoryButton.find((i) => i.default),
           instanceSelected: data.instances[0],
-        }
-        return data
+        };
+        return data;
       } catch (error) {
         console.error("Lỗi khi lấy dữ liệu sản phẩm:", error);
       }
@@ -104,7 +120,7 @@ export const useProductStore = defineStore("productStore", {
 
         data.id = Math.round(Math.random() * 1000000);
         await this.fetchProducts({});
-        console.log({ data });
+
         return data;
       } catch (error) {
         console.error(error);

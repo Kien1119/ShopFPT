@@ -53,8 +53,9 @@ const quantity = ref("");
 const fetchProductDetails = async (id) => {
   try {
     const product = await productStore.fetchProductById(id); // Giả sử hàm này tồn tại trong store của bạn
-    title.value = product.title;
-    // quantity.value = product.quantity;
+    title.value = product;
+
+    quantity.value = product;
   } catch (error) {
     console.error("Lỗi khi gọi API:", error);
   }

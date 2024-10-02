@@ -1,8 +1,9 @@
 <template>
   <div class="TitleProductSection">
+    {{ props.quantity }}pppppppppppp {{ sumPriceProduct }}dddđ
     <div class="titleSection">
       <!-- Sử dụng phần tử đầu tiên của mảng title -->
-      <h1>{{ title.name }} {{ resolveNameMemory }}</h1>
+      <h1>{{ title.name }} {{ selectedValue?.name }}</h1>
       <p>{{ title.code }}</p>
     </div>
     <div class="contentSection">
@@ -14,7 +15,6 @@
           v-model="selectedValue"
           :options="title.memoryButton"
           optionLabel="name"
-          optionValue="value"
           item-content-class="hover-bg"
         >
           <template #option="slotProps">
@@ -55,16 +55,21 @@
         </div>
       </div>
     </div>
-    <!-- <div class="quantityProduct">
+
+    <div class="quantityProduct">
       <div class="priceProduct">
-        <span class="titleQuantity"> {{ quantity[0].title }}</span>
-        <span class="priceQuantity"> {{ quantity[0].price }}</span>
+        <span class="titleQuantity"> {{ quantity.instances?.[0].title }}</span>
+        <span class="priceQuantity"> {{ formatVND(sumPriceProduct) }}</span>
         <div class="saleSection">
-          <span class="OriginalPrice"> {{ quantity[0].OriginalPrice }}</span>
-          <span class="saleQuantity"> {{ quantity[0].sale }}</span>
+          <span class="OriginalPrice">
+            {{ formatVND(quantity.instances?.[0].OriginalPrice) }}</span
+          >
+          <span class="saleQuantity">
+            {{ quantity.instances?.[0].SalePrice }}</span
+          >
         </div>
         <div class="bonusSection">
-          <span>{{ quantity[0].bonus }}</span>
+          <span>{{ quantity.instances?.[0].bonus }}</span>
         </div>
       </div>
       <div class="orPrice"><span>Hoặc</span></div>
@@ -73,13 +78,17 @@
           <span>Trả góp</span>
         </div>
         <div class="notification">
-          <span>{{ quantity[0].notification }}</span>
+          <span>{{ quantity.instances?.[0].notification }}</span>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="buyProduct">
       <div class="iconCart">
-        <SubmitButton class="icon" icon="pi pi-cart-arrow-down" />
+        <SubmitButton
+          class="icon"
+          icon="pi pi-cart-arrow-down"
+          @click="addToCart"
+        />
       </div>
       <div class="Buy">
         <SubmitButton class="buy" label="Mua Ngay" @click="buyProduct()" />
@@ -90,29 +99,81 @@
 </template>
 <script setup>
 import { computed } from "vue";
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import { useProductStore } from "@/stores/index";
 import { useRouter } from "vue-router";
-
+import { storeToRefs } from "pinia";
+import { useProductStoreBuy } from "@/stores/productStore"; // Đảm bảo đúng đường dẫn
+const productStore = useProductStore();
 const router = useRouter();
-const productStore = useProductStore;
+const productStoreBuy = useProductStoreBuy();
+const { buyProductCart } = storeToRefs(productStoreBuy);
+
 // eslint-disable-next-line no-undef
 const props = defineProps({
   title: Object,
-  // slotProps: Object,
   quantity: Array,
 });
-const selectedValue = ref(1);
+
+function formatVND(amount) {
+  if (typeof amount !== "number" || isNaN(amount)) {
+    return "-";
+  }
+
+  return amount.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
+}
+const selectedValue = ref();
 const selectProduct = ref(4);
+
+const addToCart = () => {
+  const productCart = {
+    id: props.title.id,
+    name: props.title.name,
+    price: sumPriceProduct,
+  };
+  console.log("🚀 ~ addToCart ~ productCart:", productCart);
+
+  productStoreBuy.handleToCart(productCart); // Gọi hành động thêm vào giỏ hàng
+  console.log("Sản phẩm đã được thêm vào giỏ hàng");
+};
+
 const buyProduct = () => {
   router.push({ name: "Management" });
 };
+const sumPriceProduct = computed(() => {
+  console.log(sumPriceProduct);
+  const sumPrice =
+    selectedValue.value?.countPrice + props.quantity.instances?.[0].price;
+  console.log("🚀 ~ sumPriceProduct ~ sumPrice:", sumPrice);
 
-const resolveNameMemory = computed(() => {
-  return ""
-  // return props.title.memoryButton.find((i) => i.value === selectedValue.value)
-  //   .name;
+  return sumPrice;
 });
+// const resolveNameMemory = computed(() => {
+//   // return props.title;
+//   if (props && props.title && props.title.memoryButton) {
+//     const a = props.title.memoryButton.find(
+//       (i) => i.value === selectedValue.value
+//     );
+//     if (a && a.name) {
+//       return a.name;
+//     }
+//   }
+
+//   return "";
+// });
+watch(
+  () => props.title, // Theo dõi sự thay đổi của props.title
+  (newTitle) => {
+    if (newTitle && newTitle.memoryButton) {
+      const a = newTitle.memoryButton.find((i) => i.default === true);
+
+      if (a) {
+        selectedValue.value = a; // Cập nhật selectedValue với phần tử mặc định
+      }
+    }
+  },
+  { immediate: true } // Kích hoạt ngay cả khi watch được khởi tạo, tương tự như onMounted
+);
 </script>
 <style scoped>
 .titleSection h1 {

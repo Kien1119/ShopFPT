@@ -3,7 +3,8 @@
   <div class="Cart" v-if="slotProps" @click="gotoProductDetail(slotProps.id)">
     <div class="disCart">
       <img
-        :src="slotProps.instanceSelected.img"
+        v-if="slotProps.instanceSelected?.img"
+        :src="slotProps.instanceSelected?.img"
         alt="Không có ảnh"
         class="imgCategorry"
       />
@@ -35,7 +36,7 @@
         </div>
         <div class="textCard" style="color: black; min-height: 100px">
           {{ slotProps.name }}
-    </div>
+        </div>
 
         <span class="buttonCategory">
           <div class="buttonRam" v-if="slotProps.memoryButton">
@@ -79,7 +80,7 @@
 import { ref } from "vue";
 // const props =
 // eslint-disable-next-line no-undef
-const props = defineProps({
+defineProps({
   slotProps: Object,
 });
 
